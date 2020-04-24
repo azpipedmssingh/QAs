@@ -67,18 +67,24 @@
 		d. None of the given options
 	Ans: b http://tutorials.jenkov.com/angularjs/watch-digest-apply.html https://www.thinkful.com/projects/understanding-the-digest-cycle-528/
 	
-7.Which global jasmine function declares a test case that belongs to a test suite in spec?
-A.It() function
-B.Describe() function
-C.xdescribe()function
-D.xit()function 
-8.Suite combines together sets of test cases which use describe() function with two parameters,what are the two parameters?
-A.title of the spec and function which implements test’s suits actual code 
-B.title of the controller and controller method which implements test’s suite actual code
-C.title of the test suite and function which implements test’s suite actual code 
-D.title of the spec and controller method which implements test’s suite actual code 
-9.What modification should you do to the jasmine.json file such that it immediately stops a spec as soon as an expectation fails?
-A.modifi the helper file to set stopOnFaliur to ture
-B.setstopspecon first expectation failure to true
-C.setstopspecon failure to true
-D.setstopspecon expectation failure to true 
+	7. Which global jasmine function declares a test case that belongs to a test suite in spec?
+		a. It() function
+		b. Describe() function
+		c. xdescribe()function
+		d. xit()function 
+	Ans: a https://www.freecodecamp.org/news/jasmine-unit-testing-tutorial-4e757c2cbf42/
+	
+	8. Suite combines together sets of test cases which use describe() function with two parameters
+	what are the two parameters?
+		a. title of the spec and function which implements test suit's actual code 
+		b. title of the controller and controller method which implements test suite’s actual code
+		c. title of the test suite and function which implements test suite's actual code 
+		d. title of the spec and controller method which implements test suite's actual code 
+	Ans: c https://www.freecodecamp.org/news/jasmine-unit-testing-tutorial-4e757c2cbf42/
+	
+	9. What modification should you do to the jasmine.json file such that it immediately stops a spec as soon as an expectation fails?
+		a. Modify the helper file to set stopOnFaliure to true
+		b. set stopSpecOnFirstExpectationFailure to true
+		c. Set stopOnFaliure failure to true
+		d. Set stopSpecOnExpectationFailure expectation failure to true 
+Ans: d https://www.freecodecamp.org/news/jasmine-unit-testing-tutorial-4e757c2cbf42/
