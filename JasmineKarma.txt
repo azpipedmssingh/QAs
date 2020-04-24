@@ -1,0 +1,68 @@
+	1. Which function will you insert in the place of <XYZ> that should be called to let Jasmine know that the async function has completed?
+	var flag = false
+	
+	function testAsync(done) {
+	  setTimeout(function(){
+	    flag = true;
+	    <XYZ>();
+	  }, 2000);
+	}
+		a. over
+		b. complete
+		c. return
+		d. done
+	Ans: d https://jasmine.github.io/tutorials/async
+	
+	2. Which of the following is not a way to support Jasmine managing asynchronous work?
+		a. callbacks
+		b. Functions
+		c. Promises
+		d. async keyword
+	Ans: a https://jasmine.github.io/tutorials/async
+	
+	3. Identify the inappropriate value from the given options which does not relate to logLevel.
+		a. LOG_DISABLE
+		b. LOG_ERROR
+		c. LOG_WARN
+		d. LOG_FAILURE
+	Ans: d http://karma-runner.github.io/4.0/config/configuration-file.html
+	
+	4. Which of the following functions is passed as a callback to fail the spec?
+		a. doneFail()
+		b. done.fail()
+		c. DoneFail()
+		d. Done(fail)
+	Ans: b https://jasmine.github.io/tutorials/async#failing-with-callbacks 
+	
+	5. How would Jasmine react for the following code?
+	beforeEach(function(){
+	return new Promise(function(resolve, reject){
+	
+	// perform something
+	
+	resolve();
+	});
+	});
+		a. It would wait until it is resolved before moving on to the next thing.
+		b. It would wait until it is rejected before moving on to the next thing.
+		c. It would wait until it is rejected and/or rejected before moving on to the next thing.
+		d. It would simply move on to the next thing
+	Ans: a https://jasmine.github.io/tutorials/async#promises
+	
+	6. What is the use of $digest() in the following code?
+	It('should call the given method on and on-enter-event',
+	function(){
+	  $rootScope.test = jasmine.createSpy('test');
+	  var element = $compile('<input on-enter="test()" ></input>')($rootScope);
+	  $rootScope.$digest();
+	  var e = $.Event("keydown");
+	  e.which = 13;
+	  element.triggerHandler(e);
+	  expect($rootScope.test).toHaveBeenCalled();
+	});
+	});
+		a. $digest() call method when there is no change in value of variable (watch list variables).
+		b. $digest() checks if any value of variable is modified or not (watch list variables).
+		c. $digest() deletes the value of variable (watch list variables).
+		d. None of the given options
+	Ans: b http://tutorials.jenkov.com/angularjs/watch-digest-apply.html https://www.thinkful.com/projects/understanding-the-digest-cycle-528/
